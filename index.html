@@ -45,7 +45,13 @@
     display:flex; align-items:center; justify-content:space-between;
   }
   .nav-brand{ display:flex; align-items:center; gap:10px; }
-  .nav-brand img{ height:34px; width:auto; }
+.nav-brand img{ 
+  height:34px; width:auto; 
+  background:#fff; 
+  border-radius:50%; 
+  padding:4px; 
+}
+
   .nav-brand span{ font-family:'Rajdhani', sans-serif; font-weight:700; font-size:20px; letter-spacing:0.03em; }
   .nav-links{ display:flex; gap:32px; font-size:14.5px; color:var(--muted); }
   .nav-links a:hover{ color:var(--text); }
@@ -69,7 +75,14 @@
     width:7px; height:7px; border-radius:50%; background:#FF4D6A;
     box-shadow:0 0 0 0 rgba(255,77,106,0.6);
     animation:pulse 1.8s infinite;
-  }
+  .hero img.logo{ 
+  height:120px; width:auto; 
+  background:#fff; 
+  border-radius:50%; 
+  padding:16px; 
+  margin-bottom: /* keep whatever value was already there */; 
+}
+
   @keyframes pulse{
     0%{ box-shadow:0 0 0 0 rgba(255,77,106,0.55); }
     70%{ box-shadow:0 0 0 8px rgba(255,77,106,0); }
