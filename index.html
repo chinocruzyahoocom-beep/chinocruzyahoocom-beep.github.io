@@ -75,29 +75,22 @@
     width:7px; height:7px; border-radius:50%; background:#FF4D6A;
     box-shadow:0 0 0 0 rgba(255,77,106,0.6);
     animation:pulse 1.8s infinite;
-  .he.hero img.logo{
-  height:90px;
-  width:90px;
-  object-fit:contain;
-  background:#fff;
-  border-radius:50%;
-  padding:10px;
-  display:inline-block;
-}
- 
-  height:120px; width:auto; 
-  background:#fff; 
-  border-radius:50%; 
-  padding:16px; 
-  margin-bottom: /* keep whatever value was already there */; 
-}
-
+  }
   @keyframes pulse{
     0%{ box-shadow:0 0 0 0 rgba(255,77,106,0.55); }
     70%{ box-shadow:0 0 0 8px rgba(255,77,106,0); }
     100%{ box-shadow:0 0 0 0 rgba(255,77,106,0); }
   }
-  .hero img.logo{ height:120px; width:auto; margin-bottom:6px; }
+  .hero img.logo{
+    height:90px;
+    width:90px;
+    object-fit:contain;
+    background:#fff;
+    border-radius:50%;
+    padding:10px;
+    display:inline-block;
+    margin-bottom:6px;
+  }
   .hero h1{
     font-size:clamp(40px, 6vw, 68px); font-weight:700; line-height:1.02;
     background:linear-gradient(90deg,#fff 40%, var(--cyan));
