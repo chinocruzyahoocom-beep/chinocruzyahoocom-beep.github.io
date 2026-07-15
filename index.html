@@ -1,22 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sidekick - Streamer Clips</title>
-  <style>
-    body { margin:0; font-family:system-ui,sans-serif; background:#0a0a0a; color:#eee; }
-    header {
-      position:sticky; top:0; background:white; padding:12px 5%; display:flex; 
-      align-items:center; justify-content:space-between; box-shadow:0 2px 10px rgba(0,0,0,0.1);
-    }
-    .logo img { max-height:65px; width:auto; }
-    nav a { margin-left:22px; color:#111; text-decoration:none; font-weight:500; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidekick - Streamer Clips</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .logo-text {
+            background: linear-gradient(90deg, #1e3a8a, #22d3ee);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-black text-white min-h-screen">
+    <!-- Navbar -->
+    <nav class="bg-white/5 backdrop-blur-md border-b border-white/10 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-cyan-400 rounded-xl flex items-center justify-center">
+                    <!-- Simple ninja mask SVG -->
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 3L4 8V16L12 21L20 16V8L12 3Z" fill="#1e3a8a"/>
+                        <path d="M8 9H16" stroke="#67e8f9" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M9 13H15" stroke="#67e8f9" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="text-2xl font-bold logo-text">SIDEKICK</span>
+                    <p class="text-[10px] text-cyan-400 -mt-1 tracking-widest">STREAMER CLIPS</p>
+                </div>
+            </div>
+            
+            <!-- Navigation -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#" class="hover:text-cyan-400 transition-colors">Home</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors">Clips</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors">Pricing</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+            
+            <button onclick="alert('Coming soon!')" 
+                    class="bg-white text-black px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-cyan-400 transition-colors">
+                Browse Clips
+            </button>
+        </div>
+    </nav>
 
-    .hero {
-      text-align:center; padding:60px 20px 40px;
-    }
-    .hero img {
-      max-width:90%; max-height:340px; border-radius:12px; margin-bottom:20px;
-    }
-    .hero h1 { font-size:2.8rem; margin:
+    <!-- Hero Section -->
+    <div class="max-w-4xl mx-auto text-center pt-16 pb-20 px-6">
+        <div class="bg-white rounded-3xl p-12 mb-12 shadow-2xl shadow-purple-500/20">
+            <!-- Big Logo -->
+            <div class="flex justify-center mb-8">
+                <div class="w-48 h-48 bg-white rounded-3xl flex items-center justify-center shadow-xl">
+                    <!-- Same ninja icon, larger -->
+                    <svg width="140" height="140" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="drop-shadow-2xl">
+                        <path d="M12 3L4 8V16L12 21L20 16V8L12 3Z" fill="#312e81"/>
+                        <path d="M7 10H17" stroke="#67e8f9" stroke-width="2.5" stroke-linecap="round"/>
+                        <path d="M8.5 14.5H15.5" stroke="#67e8f9" stroke-width="2.5" stroke-linecap="round"/>
+                        <path d="M12 8V11" stroke="#67e8f9" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <h1 class="text-6xl font-bold tracking-tighter mb-2 logo-text">SIDEKICK</h1>
+            <p class="text-3xl text-gray-300 font-medium">Streamer clips</p>
+        </div>
+        
+        <h2 class="text-4xl font-semibold
