@@ -10,6 +10,6 @@ The best place to find viral streamer highlights, funny gaming moments, and crea
 - Free Blueprint for streamers
 
 ## 🚀 Live Site
-[Visit Site](https://chinocruz yahoo com-beep.github.io)
+[Visit Site](https://chinocruzyahoocom-beep.github.io)
 
 ## Made with ❤️ for the streaming community
